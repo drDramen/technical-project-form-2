@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+}
+
+body,
+input,
+textarea,
+select {
+  color: #1f222c;
+  font: 400 14px "Roboto", sans-serif;
+}
+
+h1 {
+  margin: 0 0 60px;
+  color: #1f222c;
+  font: 700 30px "Roboto Slab", serif;
+  text-align: center;
+}
+
+h2 {
+  margin: 0 0 25px;
+  letter-spacing: 0px;
+  color: #b3b3b3;
+  font: 700 20px "Roboto";
+  text-transform: uppercase;
+}
+
+hr {
+  margin: 50px 0 45px;
+  border: none;
+  border-top: 1px solid #dcdcde;
+}
+
+form hr {
+  margin: 30px 0 22px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  padding: 12px 17px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0px 0px 1px 1px rgb(229, 229, 229);
+}
+
+input[type="date"] {
+  width: auto;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid #3e6aff;
+  box-shadow: 0 0 2.5px rgba(62, 106, 255, 0.55);
+}
+
+textarea {
+  height: 130px;
+}
+
+select {
+  padding: 11px 17px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+option {
+  padding: 6px 28px 6px 0;
+}
+
+.clear-fix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 70px 20px 140px;
+  max-width: 990px;
+}
+
+.btn-submit {
+  padding: 13px 17px;
+  width: 100%;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 3px;
+  background-color: #12d661;
+}
+
+.form-1 {
+  max-width: 330px;
+}
+
+.form-1 input,
+.form-1 select,
+.form-1 textarea {
+  display: block;
+  margin-bottom: 10px;
+  /* width: 100%;
+  max-width: 100%; */
+}
+
+.form-2 div,
+.form-3 div {
+  float: left;
+}
+
+.form-2 p {
+  margin: 0;
+}
+
+/* ↓ default radio and default checkbox ↓*/
+.custom-radio,
+.custom-check {
+  position: relative;
+  padding-left: 1.5em;
+}
+
+.custom-radio input,
+.custom-check input {
+  position: absolute;
+  margin: 0;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-radio span:before,
+.custom-check span:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1.1em;
+  height: 1.1em;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.custom-radio span:before {
+  border-radius: 50%;
+}
+
+.custom-check span:before {
+  border-radius: 3px;
+}
+
+.custom-radio span:after,
+.custom-check span:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.custom-check input:checked + span:before,
+.custom-radio input:checked + span:before {
+  border-color: #244dd7;
+}
+
+.custom-check input:checked + span:after {
+  left: 0.3em;
+  top: 0.3em;
+  width: 0.4em;
+  height: 0.2em;
+  border-radius: 1px;
+  border-left: 0.15em solid #244dd7;
+  border-bottom: 0.15em solid #244dd7;
+  transform: rotate(-45deg);
+  opacity: 1;
+}
+
+.custom-radio input:checked + span:after {
+  left: 0.3em;
+  top: 0.3em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #244dd7;
+  opacity: 1;
+}
+
+.custom-radio input:disabled + span,
+.custom-check input:disabled + span {
+  color: #b3b3b3;
+}
+
+.custom-check input:disabled + span:before,
+.custom-radio input:disabled + span:before {
+  background-color: #f7f7f7;
+  border-color: #e5e5e5;
+}
+
+.custom-check input:disabled + span:after {
+  border-color: #ccc;
+}
+
+.custom-radio input:disabled + span:after {
+  background-color: #ccc;
+}
+
+.custom-check:hover span:before,
+.custom-radio:hover span:before {
+  border-color: #244dd7;
+  box-shadow: 0 0 0 2px rgba(36, 77, 215, 0.3);
+}
+
+.custom-check input:focus + span:before,
+.custom-radio input:focus + span:before {
+  box-shadow: 0 0 0 2px rgba(36, 77, 215, 0.3);
+}
+
+.custom-check:hover input:disabled + span:after {
+  border-color: #ccc;
+}
+
+.custom-radio:hover input:disabled + span:after {
+  background-color: #ccc;
+}
+
+.custom-check:hover input:disabled + span:before,
+.custom-radio:hover input:disabled + span:before {
+  border-color: #e5e5e5;
+  background-color: #f7f7f7;
+  box-shadow: none;
+}
+/* ↑ default radio and default checkbox ↑ */
