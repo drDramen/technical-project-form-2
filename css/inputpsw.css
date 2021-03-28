@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'inputpsw';
+  src: url('../font/inputpsw.eot');
+  src: url('../font/inputpsw.eot') format('embedded-opentype'),
+       url('../font/inputpsw.woff2') format('woff2'),
+       url('../font/inputpsw.woff') format('woff'),
+       url('../font/inputpsw.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+input[type="password"] {
+	font-family: 'inputpsw';
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	letter-spacing: -0.1em;
+}
