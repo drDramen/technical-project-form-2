@@ -18,7 +18,8 @@
       <h1>Форми</h1>
       <!-- Формы можно оформить списком-->
       <!--↓--Form-1--↓-->
-      <form class="form-1">
+      <form class="form-1" method="POST" action="php/form1.php">
+        <input type="hidden" name="formnum" value="1">
         <h2>01. проста форма</h2>
         <input type="text" name="name" placeholder="Введіть ім’я" required>
         <input type="email" name="email" placeholder="Email" required>
