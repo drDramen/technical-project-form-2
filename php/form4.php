@@ -9,19 +9,27 @@ $text = "
     <table border='1' cellpadding='4' cellspacing='0'>
         <tr>
             <td>Ім’я</td>
-            <td>".$_POST["name"]."</td>
+            <td>".$_POST["name-04"]."</td>
         </tr>
         <tr>
-            <td>Email</td>
-            <td>".$_POST["email"]."</td>
+            <td>Пароль</td>
+            <td>".$_POST["password"]."</td>
         </tr>
         <tr>
             <td>Місто</td>
-            <td>".$_POST["city-01"]."</td>
+            <td>".$_POST["city-04"]."</td>
         </tr>
         <tr>
-            <td>Повідомлення</td>
-            <td>".$_POST["msg"]."</td>
+            <td>Стать</td>
+            <td>".$_POST["gender-04"]."</td>
+        </tr>
+        <tr>
+            <td>Фото</td>
+            <td>".$_POST["foto"]."</td>
+        </tr>
+        <tr>
+            <td>Коментарій</td>
+            <td>".$_POST["msg-04"]."</td>
         </tr>
     </table>
 ";
